@@ -6,5 +6,5 @@ requests
 gspread
 oauth2client
 datetime
-from bs4 import BeautifulSoup
-from unicodedata import normalize as nm #Biblioteca necessária para tratar acentuação
+BeautifulSoup
+normalize
