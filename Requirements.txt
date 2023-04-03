@@ -1,0 +1,10 @@
+import requests
+
+from bs4 import BeautifulSoup
+
+import pandas as pd
+
+import datetime as dtm
+from datetime import date as dt
+
+from unicodedata import normalize as nm #Biblioteca necessária para tratar acentuação
