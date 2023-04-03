@@ -4,11 +4,7 @@ def numJogoRodada(numJogo):
     num_jogo = int(numJogo.get_text().strip().replace('Jogo: ','').replace('<font color="red">(W.O. Duplo)</font>', ''))
 
     ##if para calcular a rodada a que o jogo pertence
-    '''
-        1) A cada rodada ocorrem 10 jogos, sendo assim quando o número do jogo dividido por 10 tiver 0 como resto, a rodada será o quociente.
-        Ex: 200 / 10 = 20 - sendo assim a rodada a que pertence o jodo de nº 200 é a 20
-        2) Caso o **resto da divisão** do número do jogo for **diferente de 0** então a rodada corresponderá ao quociente (inteiro) + 1
-        Ex: 201 / 10 = 20,1 - sendo assim a rodada será 21, pois o resto é 1 e o quociente inteiro é 20.
+    
     '''
     if (num_jogo%10 == 0):
         rodada = int(int(num_jogo)/10)
@@ -496,7 +492,6 @@ def placarJogo(golMandante, golVisitante):
                                     , 'Resultado', 'Resultado Mandante', 'Resultado Visitante', 'Placar', 'Link do Jogo'
                                     , 'Data de Início da Consulta', 'Data de Fim da Consulta'])
                                    
-df
 
 import os
 
@@ -538,7 +533,7 @@ menu = """
 
 @app.route("/")
 def index():
-  return menu + "Olá, mundo! Esse é meu site sobre o campeonato brasileirocampeonato brasileiro. (Sérgio Vieira)"
+  return menu + "Olá, mundo! Esse é meu site sobre o Campeonato Brasileiro. (Sérgio Vieira)"
 
 @app.route("/sobre")
 def sobre():
